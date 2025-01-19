@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Admission System</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=delete" />
+    <link rel="stylesheet" href="/stylesheets/styles.css">
+
+
+</head>
+
+<body>
+    <header>
+        <h1>College Admission Portal</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/">About Us</a></li>
+                <li><a href="/">Admission Process</a></li>
+                <li><a href="/">Apply Now</a></li>
+                <li><a href="/students">Applied Students</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="allStudents">
+        <table class="table">
+            <thead>
+                <th>Student Name</th>
+                <th>Email Id</th>
+                <th>Mobile Number</th>
+                <th>Selected Course</th>
+                <th>Full Details</th>
+
+            </thead>
+
+            <tbody>
+
+                <% if (allStudents.length> 0) { %>
+                    <% allStudents.forEach(student=> { %>
+                        <tr>
+                            <td class="studentName">
+                                <%= student.studentName %>
+                            </td>
+                            <td class="studentEmail">
+                                <%= student.emailId %>
+                            </td>
+                            <td class="studentMobile">
+                                <%= student.mobile %>
+                            </td>
+                            <td class="studentCourse">
+                                <%= student.course %>
+                            </td>
+                            <td class="fullDetails">
+                                <div class="fullDetails2">
+                                    <a href="/view/<%= student._id %>">Click Here</a>
+                                    <a class="material-symbols-outlined" href="/delete/<%= student._id %>"> delete</a>
+                                </div>
+
+
+                            </td>
+
+
+
+                        </tr>
+
+                        <% }) %>
+
+                            <% } else { %>
+                                <h3>No Students yet.</h3>
+
+                                <% } %>
+
+
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+
+
+    <footer id="contact">
+        <div class="footer-content">
+            <h2>Contact Us</h2>
+            <p>Email: admissions@college.edu</p>
+            <p>Phone: 123456789</p>
+            <p>Address: 123 Beleghata, Kolkata-12345</p>
+        </div>
+        <div class="footer-searches">
+            <h2>Relevant Searches</h2>
+            <ul>
+                <li><a href="#admission">Admission Requirements</a></li>
+                <li><a href="#programs">Available Programs</a></li>
+                <li><a href="#scholarships">Scholarship Opportunities</a></li>
+                <li><a href="#tuition">Tuition Fees</a></li>
+                <li><a href="#campus-life">Campus Life</a></li>
+            </ul>
+        </div>
+        <p>&copy; 2024 College Admission System. All Rights Reserved.</p>
+    </footer>
+
+
+
+</body>
+
+</html>

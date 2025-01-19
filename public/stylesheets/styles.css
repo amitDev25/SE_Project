@@ -1,0 +1,280 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Arial';
+    background-color: #f0f4f8; 
+    color: #333; 
+    line-height: 1.5;
+}
+
+header {
+    background: #2c3e50; 
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.2em;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.hero {
+    background: #2980b9; 
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.hero-text h2 {
+    font-size: 2.2em;
+    margin-bottom: 10px;
+}
+
+.hero-text p { 
+    font-size: 1em; 
+    margin-bottom: 20px;
+}
+
+section {
+    padding: 20px;
+    margin: 15px auto;
+    background: white;
+    border-radius: 8px;
+    max-width: 700px; 
+}
+
+h2{
+    /* color: #2980b9;  */
+    margin-bottom: 15px;
+    font-size: 1.8em;
+    border-bottom: 2px solid #2980b9; 
+}
+
+.studentDetails h3{
+    /* color: #2980b9;  */
+    margin-bottom: 15px;
+    font-size: 1.6em;
+    border-bottom: 2px solid #2980b9; 
+}
+
+ol {
+    margin-left: 20px;
+}
+
+ol li {
+    margin-bottom: 8px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="file"], select {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;    
+}
+
+.button {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    text-align: center;
+    text-decoration: none;
+}
+
+.button {
+    background-color: #2980b9; 
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #1c598a; 
+}
+footer {
+    background: #2c3e50; 
+    color: white;
+    padding: 15px; 
+    text-align: center;
+    display: flex; 
+    flex-direction: column; 
+}
+
+.footer-top {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: flex-start; 
+    width: 100%; 
+}
+
+.footer-content {
+    text-align: left; 
+}
+
+.footer-searches {
+    text-align: right; 
+}
+
+.footer-searches ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-searches a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.flex{
+    display: flex;
+}
+
+.font-bold{
+    font-weight: bold;
+}
+
+/* Admission Page */
+
+.genderSection{
+    gap: 5rem;
+    margin-bottom: 20px;
+}
+
+#studentSection {
+    /* height: 100vh;
+    width: 100vw; */
+}
+.studentDetails{
+    width: 800px;
+    height: auto;
+    border: 4px solid #0000a4;
+    background-color: #f2f3ff;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 20px;
+}
+
+.title{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.titlevalue{
+    font-size: 1.2rem;
+
+}
+.studentDetails h1{
+    text-align: center;
+}
+
+#allStudents {
+    /* height: 100vh; */
+    background-color: #f0f4f8; 
+    margin-bottom: 200px;
+
+}
+
+.table {
+    width: 90%;
+    /* padding: 20px; */
+    margin: auto;
+    margin-top: 30px;
+    
+    /* overflow: hidden; */
+    border-collapse: collapse;
+    
+}
+
+th {
+    border: 3px solid rgb(0, 0, 98);
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #a4bde8;
+    font-size: 1.3rem;
+
+}
+
+tr {
+    text-align: center;
+    font-size: 1.05rem;
+    font-weight: bold;
+    
+
+
+}
+
+td {
+    text-align: center;
+    border: 3px solid rgb(0, 0, 98);
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+
+
+
+tr:nth-child(odd) {
+    background-color: #d7ecff;
+}
+
+tr:nth-child(even) {
+    background-color: #a4bde8;
+}
+
+.material-symbols-outlined{
+    text-decoration: none;
+    color: #011254;
+}
+
+.fullDetails2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+
+
+

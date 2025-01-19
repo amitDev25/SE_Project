@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Admission System</title>
+    <link rel="stylesheet" href="/stylesheets/styles.css">
+    
+</head>
+
+<body>
+    <header>
+        <h1>College Admission Portal</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/">About Us</a></li>
+                <li><a href="/">Admission Process</a></li>
+                <li><a href="/">Apply Now</a></li>
+                <li><a href="/students">Applied Students</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="studentSection">
+        <div class="studentDetails">
+            <h1>Student Details</h1>
+            <h3>Basic Details</h3>
+            <p><span class="title">Student Name: </span> <span class="titlevalue"><%= student.studentName %></span></p>
+            <p><span class="title">Selected Course: </span> <span class="titlevalue"><%= student.course %></span></p>
+            <p><span class="title">Father's Name: </span> <span class="titlevalue"><%= student.fatherName %></span></p>
+            <p><span class="title">Mother's Name: </span> <span class="titlevalue"><%= student.motherName %></span></p>
+            <p><span class="title">Gender: </span> <span class="titlevalue"><%= student.gender %></span></p>
+            <p><span class="title">Mobile Number: </span> <span class="titlevalue"><%= student.mobile %></span></p>
+            <p><span class="title">Email Id: </span> <span class="titlevalue"><%= student.emailId %></span></p>           
+            <p><span class="title">Current Address: </span> <span class="titlevalue"><%= student.address1 %></span></p>
+            <p><span class="title">Permanant Address: </span> <span class="titlevalue"><%= student.address2 %></span></p>
+            <p><span class="title">State: </span> <span class="titlevalue"><%= student.state %></span></p>
+            
+
+            <br>
+
+            <h3>Academic Details</h3>
+            <p><span class="title">Name of Secondary School: </span> <span class="titlevalue"><%= student.school10 %></span></p>
+            <p><span class="title">Class 10th Percentage: </span> <span class="titlevalue"><%= student.percent10 %>%</span></p>
+            <p><span class="title">Class 10th Board/University: </span> <span class="titlevalue"><%= student.board10 %></span></p>
+            <p><span class="title">Name of Higher Secondary School: </span> <span class="titlevalue"><%= student.school12 %></span></p>
+            <p><span class="title">Class 12th Percentage: </span> <span class="titlevalue"><%= student.percent12 %>%</span><span></span></p>
+            <p><span class="title">Class 12th Board/University: </span> <span class="titlevalue"><%= student.board12 %></span></p>
+            <p><span class="title">Last Qualified Exam (Competitive): </span> <span class="titlevalue"><%= student.lastExam %></span></p>
+            <p><span class="title">Percentage/Rank  of Last Qualified Exam (Competitive): </span> <span class="titlevalue"><%= student.lastExamPercent %></span></p>      
+                     
+
+
+        </div>
+    </div>
+
+
+
+    <footer id="contact">
+        <div class="footer-content">
+            <h2>Contact Us</h2>
+            <p>Email: admissions@college.edu</p>
+            <p>Phone: 123456789</p>
+            <p>Address: 123 Beleghata, Kolkata-12345</p>
+        </div>
+        <div class="footer-searches">
+            <h2>Relevant Searches</h2>
+            <ul>
+                <li><a href="#admission">Admission Requirements</a></li>
+                <li><a href="#programs">Available Programs</a></li>
+                <li><a href="#scholarships">Scholarship Opportunities</a></li>
+                <li><a href="#tuition">Tuition Fees</a></li>
+                <li><a href="#campus-life">Campus Life</a></li>
+            </ul>
+        </div>
+        <p>&copy; 2024 College Admission System. All Rights Reserved.</p>
+    </footer>
+
+
+
+</body>
+
+</html>
