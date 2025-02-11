@@ -55,9 +55,40 @@ app.get("/view/:id", async (req, res)=>{
     
 })
 
+app.post("/update/:userid", async(req, res)=>{
+    
+
+    let updatedUser = await userModel.findOneAndUpdate({_id: req.params.userid},{
+        studentName: req.body.studentName,
+        fatherName: req.body.fatherName,
+        motherName: req.body.motherName,
+        gender: req.body.gender,
+        mobile: req.body.mobile,
+        emailId: req.body.emailId,
+        address1: req.body.address1,
+        address2: req.body.address2,
+        state: req.body.state,
+        school10: req.body.school10,
+        percent10: req.body.percent10,
+        board10: req.body.board10,
+        school12: req.body.school12,
+        percent12: req.body.percent12,
+        board12: req.body.board12,
+        lastExam: req.body.lastExam,
+        lastExamPercent: req.body.lastExamPercent,
+        course: req.body.course     
+    }, {new: true});
+    res.redirect('/students')    
+})
+
 app.get("/delete/:id", async(req, res)=>{
     let users = await userModel.findOneAndDelete({_id: req.params.id});
     res.redirect('/students')
+})
+
+app.get("/edit/:id", async(req, res)=>{
+    let student = await userModel.findOne({_id: req.params.id});
+    res.render('edit', {student})
 })
 
 
