@@ -50,11 +50,18 @@
             <p><span class="title">Class 12th Percentage: </span> <span class="titlevalue"><%= student.percent12 %>%</span><span></span></p>
             <p><span class="title">Class 12th Board/University: </span> <span class="titlevalue"><%= student.board12 %></span></p>
             <p><span class="title">Last Qualified Exam (Competitive): </span> <span class="titlevalue"><%= student.lastExam %></span></p>
-            <p><span class="title">Percentage/Rank  of Last Qualified Exam (Competitive): </span> <span class="titlevalue"><%= student.lastExamPercent %></span></p>      
+            <p><span class="title">Percentage/Rank  of Last Qualified Exam (Competitive): </span> <span class="titlevalue"><%= student.lastExamPercent %></span></p>  
+            
+            <div class="fullDetailsView">            
+                <a class="material-symbols-outlined" href="/edit/<%= student._id %>"> Edit</a>
+                <a class="material-symbols-outlined" href="/delete/<%= student._id %>"> Delete</a>    
+            </div>
                      
 
 
         </div>
+
+      
     </div>
 
 

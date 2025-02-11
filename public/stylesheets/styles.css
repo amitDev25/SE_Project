@@ -38,7 +38,12 @@ nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
-    transition: color 0.3s ease;
+    /* transition: color 0.3s ease; */
+}
+
+nav ul li a:hover{
+    color: rgb(199, 193, 193);
+
 }
 
 .hero {
@@ -214,6 +219,11 @@ footer {
     margin-bottom: 200px;
 
 }
+ h1{
+    text-align: center;
+    margin-top: 20px;
+
+}
 
 .table {
     width: 90%;
@@ -268,11 +278,33 @@ tr:nth-child(even) {
     color: #011254;
 }
 
+.material-symbols-outlined:hover{    
+    color: #3d509d;
+}
+
 .fullDetails2{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 15px;
+}
+.fullDetailsView {
+    margin-top: 40px;
+
+}
+.fullDetailsView a{
+    /* border: 3px solid red; */
+    border-radius: 15px;
+    background-color: #002364;
+    color: white;
+    padding: 10px;
+    margin-right: 20px;
+    
+}
+
+.fullDetailsView a:hover{
+    background-color: #0f3783;
+    color: white;
 }
 
 
